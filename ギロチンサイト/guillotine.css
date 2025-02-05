@@ -1,0 +1,144 @@
+@font-face {
+    font-family: '廻想体';
+    src: url('../フォント用/Kaisotai-Next-UP-B.otf') format('opentype'),
+         url('../フォント用/Kaisotai-Next-UP-B.ttf') format('truetype');
+}
+@font-face {
+    font-family: '黒薔薇';
+    src: url('../フォント用/kurobara-gothic-regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: '黒薔薇-細';
+    src: url('../フォント用/kurobara-gothic-light.ttf') format('truetype');
+}
+@font-face {
+    font-family: '黒薔薇-極細';
+    src: url('../フォント用/kurobara-gothic-thin.ttf') format('truetype');
+}
+
+.header{
+    background-color: rgb(189, 10, 10);
+}
+.title{
+    padding: 10px 0;
+    letter-spacing: 2px;
+    font-size: 60px;
+    text-align: center;
+    color: aliceblue;
+    font-family: '廻想体', serif ;
+    cursor: default;
+}
+.shoptitle{
+    padding: 5px 0;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+body{
+    background-color: rgb(41, 8, 10);
+}
+.container {
+    position: relative; /* 親要素に相対的な位置付け */
+    width: 100%; /* 必要に応じて */
+    height: 100px; /* 必要に応じて */
+}
+
+.top-right-login {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}.top-right-login:active{
+    transform: scale(0.94);
+}
+.search{
+    position: absolute;
+    top: 5px;
+    right: 60px;
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+}.search:active{
+    transform: scale(0.94);
+}
+.top-right-home {
+    position: absolute;
+    top: 0;
+    right: 100px;
+    width: 52px;
+    height: auto;
+}.top-right-home:active{
+    transform: scale(0.94);
+}
+
+.welpre{
+    position: relative;
+    animation: fadein 1 1s ease-in-out;
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px auto;
+    text-align: center; /* 子要素の文字を水平方向に中央揃え */
+}
+.guillotine_back{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+.welcome{
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: '黒薔薇';
+    top:15%;
+    opacity: 0; /* 最初は透明にしておく */
+    transform: translateX(-50%);/*センター寄せの修正*/
+    width: 100%; /* 必要な幅を設定 */
+    animation: fadein 1 1s ease-in-out 0.5s forwards;
+    cursor: default;
+}
+.welcome span{
+    font-size: 100px;
+    text-shadow:7px 8px 2px rgb(32, 2, 11);
+}
+@keyframes fadein{
+    0% {
+        opacity: 0;
+        transform:translateY(-20px);
+    }100% {
+        opacity: 1;
+        transform:translateY(0); 
+    }
+}
+.text_shop{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-family: '黒薔薇-極細';
+    top:70%;
+    opacity: 0; /* 最初は透明にしておく */
+    transform: translateX(-50%);/*センター寄せの修正*/
+    width: 100%; /* 必要な幅を設定 */
+    animation: fadein 1 1s ease-in-out 0.75s forwards;
+    cursor: default;
+}
+.text_shop span{
+    font-family: '黒薔薇-細';
+    font-size: 32px;
+}
+
+footer {
+    margin: 40px 0 0 0;
+    width: 100%;
+    height: 120px; 
+    text-align: center;
+    padding: 25px 0;
+    background-color: #a30303;
+    cursor: default;
+}
+footer p{
+    
+    color: azure;
+}
