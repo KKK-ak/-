@@ -1,0 +1,36 @@
+.news-container {
+    display: flex;
+    flex-direction: column;    
+    gap: 5px;
+}
+
+.news-box {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: flex-start; /* 画像とテキストを上揃え */
+    background-color: #fff;
+    border: 2px dashed #727272;
+    padding: 15px;
+    cursor:pointer;
+    transition:
+        border 0.4s,
+        box-shadow 0.4s;
+}.news-box:hover{
+    border: 2px solid #f3550c;
+    box-shadow:  0 0 10px rgba(243, 74, 74, 0.5), 0 0 7px rgba(253, 110, 110, 0.2);
+}
+
+.font_day{
+    color: #999;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.font_newsname{
+    font-size: 25px;
+    font-family: 'M PLUS 1p', sans-serif;
+    margin-top: 33px;
+}
+
+.spacer {
+    height: 50px; /* お好みの高さに設定 */
+}

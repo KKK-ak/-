@@ -1,0 +1,133 @@
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* ボックス間のスペース */
+    
+}
+
+.list-container a{
+    display: flex; /* フレックスボックスを使用 */
+    align-items: flex-start; /* 画像とテキストを上揃え */
+    margin: 20px 0 0 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    cursor:default;
+    border-radius: 15px;          /* 角を丸くする */
+    transition:box-shadow 0.2s ease;
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}
+.list-container a:hover{
+    box-shadow: 
+    inset 0 0 10px rgba(31, 30, 134, 0.5), 0 0 10px rgba(255, 255, 255, .2),
+    0 0 10px rgba(31, 30, 134, 0.5), 0 0 10px rgba(255, 255, 255, .2);
+}
+.list-container h2 {
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    color: rgb(88, 88, 196);
+}
+
+
+.eye{
+    margin-right: 15px; /* 画像とテキストの間のスペース */
+    width: 300px;
+    height: 195px;
+    border-radius: 20px;
+}
+
+.bag{
+    margin-right: 15px; /* 画像とテキストの間のスペース */
+    width: 300px;
+    height: 220px;
+    border-radius: 30px;
+    background-color: rgb(82, 82, 146);
+}
+
+.goodsmore{
+    display: inline-block;
+    padding: 10px 24px;
+    margin: 40px auto 50px auto;
+    background-color: #db7311;
+    border: 2px solid #db7311; /* 枠の色を設定 */
+    text-align: center;           /* テキストを中央揃え */
+    color: #fff;
+    border-radius: 15px;          /* 角を丸くする */
+    font-size: 25px;              /* フォントサイズ */
+    font-family: 	"木漏れ日ゴシック";
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition:
+        box-shadow 0.5s ease,
+        background-color 0.4s ease,
+        boder-color 0.4s ease;
+}.goodsmore:hover{
+    background-color: #ffdea0;
+    color: #db7311;
+    border-color: #f1b84c;
+    animation: powa 0.1s 1 ease-in-out;
+    padding: 10px 25px;
+    font-weight: 700;
+    box-shadow: 
+        inset 0 0 20px rgba(255, 150, 13, 0.5), 0 0 15px rgba(245, 162, 54, 0.2),
+        0 0 20px rgba(243, 74, 74, 0.5), 0 0 7px rgba(253, 110, 110, 0.2);
+}.goodsmore:active{
+    animation: purupuru 0.2s 2 ease;
+}
+
+.star5_rating{
+    margin-left: 40px;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    white-space: nowrap;
+    color: #5c5b5b; /* グレーカラー 自由に設定化 */
+    /*font-size: 30px; フォントサイズ 自由に設定化 */
+}.star5_rating:before, .star5_rating:after{
+    content: '★★★★★';
+}.star5_rating:after{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffcf32; /* イエローカラー 自由に設定化 */
+}
+
+.star5_rating[data-rate="5"]:after{ width: 100%; } /* 星5 */
+.star5_rating[data-rate="4.9"]:after{ width: 98%; }
+.star5_rating[data-rate="4.8"]:after{ width: 96%; }
+.star5_rating[data-rate="4.7"]:after{ width: 94%; }
+.star5_rating[data-rate="4.6"]:after{ width: 92%; }
+.star5_rating[data-rate="4.5"]:after{ width: 90%; } /* 星4.5 */
+.star5_rating[data-rate="4.4"]:after{ width: 88%; }
+.star5_rating[data-rate="4.3"]:after{ width: 86%; }
+.star5_rating[data-rate="4.2"]:after{ width: 84%; }
+.star5_rating[data-rate="4.1"]:after{ width: 82%; }
+.star5_rating[data-rate="4"]:after{ width: 80%; } /* 星4 */
+.star5_rating[data-rate="3.9"]:after{ width: 78%; }
+.star5_rating[data-rate="3.8"]:after{ width: 76%; }
+.star5_rating[data-rate="3.7"]:after{ width: 74%; }
+.star5_rating[data-rate="3.6"]:after{ width: 72%; }
+.star5_rating[data-rate="3.5"]:after{ width: 70%; } /* 星3.5 */
+
+/*グッズのキャッチフレーズ*/
+.fontgoods{
+    margin: 10px 5px 0 0;
+    font-size: 18px;
+    font-family: 'Hiragino Maru Gothic Pro';
+    text-align:center;
+}
+
+.fontpay{
+    font-size: 30px;
+    font-family: 'Hiragino Maru Gothic Pro';
+    margin: 50px  0 0 20px;
+    text-align:left;
+}

@@ -1,0 +1,18 @@
+footer {
+    width: 100%;
+    height: 120px; 
+    text-align: center;
+    padding: 50px 0;
+    background-color: #cab64a;
+    cursor: default;
+}
+footer a {
+    margin: 15px 15px;
+    color: #333; /* 通常時のテキスト色 */
+    font-weight: normal; /* 通常時のフォントウェイト */
+    text-decoration: none; /* リンクの下線を消す */
+}footer a:hover{
+    color: rgb(97, 9, 3);
+    cursor: pointer;
+    font-weight: 800;
+}

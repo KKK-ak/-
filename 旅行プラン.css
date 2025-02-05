@@ -1,0 +1,124 @@
+@font-face {
+    font-family: '源柔フォント';
+    src: url('フォント用/GenJyuuGothicX-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: '源英アンチックフォント';
+    src: url('フォント用/GenEiAntiqueNv5-M.ttf') format('truetype');
+}
+
+.plantitle{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 40px auto 35px auto;
+    border: 2px solid #3c0d5c; /* 枠の色を設定 */
+    text-align: center;           /* テキストを中央揃え */
+    border-radius: 5px;          /* 角を丸くする */
+    font-size: 20px;              /* フォントサイズ */
+    font-family:'源柔フォント',sans-serif;
+}
+
+.planbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 均等に配置 */
+}
+
+.card{
+    background-color: white; /* 枠の内部色 */
+    border: 2px solid #170b4d; /* 枠の色 */
+    border-radius: 5px; /* 角を丸くする */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 影をつける */
+    width: 350px; /* 固定幅 */
+    height: 480px;
+    margin: 20px; /* マージンを設定 */
+    overflow: hidden; /* 内容がはみ出さないように */
+}
+.card-description a {
+    display: block;
+    font-size: 25px;
+    padding: 5px 2px;
+    font-family: sans-serif;
+    margin: 5px 10px;
+    color: #fff;
+    font-family: '源英アンチックフォント';
+    background-color: #f5990f;
+    border-radius: 15px; 
+    cursor: pointer;
+    text-decoration: none;
+}.card-description a:hover{
+    background-color: #f5e50a;    /* ホバー時の背景色 */
+    
+}.card-description a:active{
+    animation: pop 0.2s 1 ease-in-out;
+}
+.card-description p {
+    font-size: 15px;
+    margin-left: 5px; 
+    margin-right: 5px;
+    cursor: default;
+}
+
+.hurano{
+    margin-top: 5px;
+    width: 200px;
+    height: auto;
+}
+
+.nara{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: auto;
+}
+
+.isigaki{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 210px;
+    height: auto;
+}
+
+.planmore{
+    display: inline-block;
+    padding: 10px 24px;
+    margin: 40px auto 50px auto;
+    background-color: #3c0d5c;
+    border: 2px solid #3c0d5c; /* 枠の色を設定 */
+    text-align: center;           /* テキストを中央揃え */
+    color: #fff;
+    border-radius: 15px;          /* 角を丸くする */
+    font-size: 20px;              /* フォントサイズ */
+    font-family: '源柔フォント';
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition:
+        box-shadow 0.5s ease,
+        background-color 0.4s ease,
+        boder-color 0.4s ease;
+}.planmore:hover{
+    background-color: #ddc4ee;
+    color: #3c0d5c;
+    border-color: rgba(31, 30, 134, 0.5);
+    animation: powa 0.1s 1 ease-in-out;
+    padding: 10px 25px;
+    font-weight: 700;
+    box-shadow: 
+        inset 0 0 20px rgba(31, 30, 134, 0.5), 0 0 20px rgba(255, 255, 255, .2),
+        0 0 20px rgba(19, 18, 82, 0.5), 0 0 10px rgba(22, 22, 22, 0.2);
+}   
+@keyframes powa{
+    0%,100%{}
+    45%,65%{
+        transform: scale(0.955);
+    }
+    50%{
+        transform: scale(0.95);
+    }
+}
+.planmore:active{
+    transform: scale(0.95);
+}
+

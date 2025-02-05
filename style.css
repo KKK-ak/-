@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+.img { 
+    background:linear-gradient(to top, rgba(66, 13, 66, 0.7) 0%, rgba(124, 179, 185, 0.7) 100%),url(差し込み画像/星空壁紙.jpg);             
+    background-size:  cover;                        
+}
+
+/*タイトルフォント*/
+.font1 {
+   font-size: 90px;
+   font-family:  "Kokoro";
+   color: azure;
+   text-align:center;
+   cursor: default;
+}
+.font2 {
+   font-size: 22px;
+   font-family: 'Sawarabi Mincho', sans-serif;
+   color: azure;
+   text-align:center;
+   margin-bottom: 8px;
+   cursor: default;
+}
+
+body {
+  background-color: #000300;
+}
+/*画像が入れ替わる部分*/
+.container {
+  position: relative;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  width: 1120px;
+  height: 620px;
+  box-shadow: 0 0 50px rgba(95, 129, 168, 0.7);
+}
+.image {
+  position: absolute;
+	width: 100%;
+  height:auto;
+	opacity: 0;
+	animation: change-img-anim 20s infinite;
+}
+.image:nth-of-type(1) {
+	animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+	animation-delay: 4s;
+}
+.image:nth-of-type(3) {
+	animation-delay: 8s;
+}
+.image:nth-of-type(4) {
+	animation-delay: 12s;
+}
+.image:nth-of-type(5) {
+	animation-delay: 16s;
+}
+
+@keyframes change-img-anim {
+  0% { opacity: 0; }
+  1%, 45% { opacity: 1; } /* 最初の画像が早く完全に表示される */
+  46%, 100% { opacity: 0; }
+}
+
+  /*こんなところが、あったんだ。*/
+.font3{
+  font-size: 50px;
+  font-family:  "Kokoro";
+  color: azure;
+  text-align:center;
+  cursor: default;
+}
