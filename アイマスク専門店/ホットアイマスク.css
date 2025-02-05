@@ -1,0 +1,276 @@
+@font-face {
+    font-family: '源柔フォント';
+    src: url('../フォント用/GenJyuuGothicX-Medium.ttf') format('truetype');
+}@font-face {
+    font-family: '棘薔薇';
+    src: url('../フォント用/TogebaraMedium.otf') format('opentype');
+}@font-face {
+    font-family: 'フォントぽ';
+    src: url('../フォント用/FontopoNIHONGO.otf') format('opentype');
+}
+
+nav{
+    text-align: center;
+}
+nav h1{
+    color: rgb(73, 73, 90);
+    font-size:38px;
+    font-family: '源柔フォント';
+    font-weight: 100;
+    letter-spacing: 1px;
+    cursor: default;
+}
+nav h1 img{
+    width: 70px;
+    height: auto;
+}
+nav ul{
+    padding: 10px 0;
+    border-top: 1px dashed rgb(115, 114, 122);
+    border-bottom: 1px dashed rgb(115, 114, 122);
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 35px;
+    font-family: '棘薔薇';
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+nav ul li a:hover .drop-menu-list {
+    transform: scaleY(1); /* ドロップダウンメニューの表示 */
+  }
+nav ul li a:hover{
+    color: rgb(123, 122, 131);
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+.drop-menu {
+    position: relative;
+}
+.drop-menu-list {
+    left: 0;
+    position: absolute;
+    top: 100%;
+    border: none;
+    transform: scaleY(0); /* ドロップダウンメニューの非表示 */
+    transform-origin: center top; /* 変形を適応する基準を設定 */
+    transition: transform .3s; /* 表示の変化をアニメーション化 */
+    width: max-content;
+    z-index: 1;
+}
+.drop-menu-item {
+    transition: opacity .3s; /* 不透明度の変化をアニメーション化 */
+}
+
+.content{
+    overflow: hidden;
+    text-align: center;
+    margin: 40px auto;
+    width: 1100px;
+}
+.main{
+    float: right;
+    width: 78%;
+}
+.sub{
+    float: left;
+    width: 22%;
+}
+.sub ul{
+    margin: 0 15px 0 -20px;
+}
+.sub h2{
+    text-align: left;
+    font-size: 30px;
+    font-family: '棘薔薇';
+    letter-spacing: 2px;
+    cursor: default;
+    border-bottom: 1px dashed rgb(115, 114, 122);
+}
+.sub li{
+    list-style-type: none;
+    text-align: left;
+    font-family: 'フォントぽ';
+    margin: 10px 0;
+    border-bottom: 1px dotted rgb(115, 114, 122);
+    cursor: pointer;
+}.sub li:hover{
+    color: rgb(72, 47, 161);
+    font-weight: 600;
+    border-bottom: rgb(72, 47, 161) 2px dotted;
+    margin-bottom: -1px;
+}
+.main h2{
+    margin: 70px 0 40px 0;
+    font-size: 60px;
+    font-weight: 100;
+    font-family: '棘薔薇';
+    letter-spacing: 2px;
+    cursor: default;
+    border-bottom: 1px dashed rgb(157, 156, 160);
+}
+.main ul li{
+    text-align: left;
+    list-style-type: none;
+    border-bottom: 1px dotted rgb(115, 114, 122);
+}
+.main ul li h3{
+    display: inline-block;
+    font-family: '源柔フォント';
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 1px;
+}.main ul li h3:hover{
+    margin-bottom: 0;
+    color: orangered;
+    border-bottom: orangered solid 1px;
+    cursor: pointer;
+}
+.main ul li div{
+    text-align: right;
+}
+.white{
+    margin: 40px auto;
+    background: #FFF;
+    width: 600px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out,
+                filter 0.25s ease-in-out,
+                color 0.5s ease-in-out;
+}.white:hover{
+    opacity: 0.88;
+    filter: brightness(110%);
+    color: rgb(61, 60, 60);
+}.white:active{
+    transform: scale(0.99);
+}
+.white img{
+    display: block;
+    width: 600px;
+    height: 380px;
+    border-radius: 5px;
+    border: rgb(141, 16, 54,0.75) 3px solid;
+}
+.white div{
+    margin: 0 auto;
+    font-size: 23px;
+    font-family: serif;
+    background-color: rgb(214, 214, 214);
+}
+.backbl{
+    background-color: rgb(154, 154, 155);
+}
+.item_pare{
+    margin: 0 auto;
+    width: 650px;
+}
+.item{
+    display: inline-block;
+    margin: 20px 5px;
+    background: #FFF;
+    width: 180px;
+    height: 171px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out,
+                filter 0.25s ease-in-out,
+                color 0.5s ease-in-out;
+}.item:hover{
+    opacity: 0.88;
+    filter: brightness(110%);
+    color: rgb(61, 60, 60);
+}.item:active{
+    transform: scale(0.99);
+}
+.item div{
+    background-color: rgb(214, 214, 214);
+    font-family: '源柔フォント';
+    padding: 5px 0;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px rgb(206, 206, 209) solid;
+    box-sizing: border-box;
+}
+
+.huwasiro{ /*ふわふわ白マスク*/
+    position: relative;
+    background-color: rgb(232, 234, 236);
+}.huwasiro::before{
+    position: absolute;
+    content: url(差し込み画像/RANKING3.png);
+}
+.huwakuro{ /*ふわふわ黒マスク*/
+    background-color: rgb(165, 165, 190);
+}
+.orange{ /*オレンジチェックマスク*/
+    padding: 20px 0;
+    background-color: rgb(236, 224, 220);
+}
+.stripe{ /*三色ストライプマスク*/
+    padding: 21px 0;
+    background-color: rgb(219, 241, 228);
+}
+.pair{ /*ペアマスク*/
+    padding: 18px 0;
+    background-color: rgb(232, 202, 241);
+}
+.huwahuwaneck{ /*ふわふわ首枕*/
+    background-color: azure;
+}
+.main button{
+    margin: 40px 0;
+    padding: 15px 45px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: '棘薔薇';
+    transition: box-shadow 0.1s ease-in-out,
+                background-color 0.1s ease-in-out;
+}.main button:hover{
+    background-color: rgb(196, 196, 196);
+    box-shadow: 
+        inset 0 0 8px rgba(31, 30, 134, 0.5), 0 0 8px rgba(255, 255, 255, .2),
+        0 0 5px rgba(19, 18, 82, 0.5), 0 0 5px rgba(22, 22, 22, 0.2);
+}.main button:active{
+    color: rgb(80, 80, 80);
+}
+
+.coupon{
+    margin: 0 15px;
+    padding: 15px 0;
+    color: red;
+    font-size: 15px;
+    border-radius: 10px;
+    border: red solid 2px;
+    cursor: default;
+}
+.coupon h3{
+    margin: 10px auto -2px auto;
+    font-size: 20px;
+}
+
+footer{
+    padding: 30px 0;
+    border-top: 1px dashed rgb(58, 58, 95);
+    text-align: center;
+    color: rgb(28, 28, 88);
+    cursor: default;
+}
+footer a{
+    font-family: '源柔フォント';
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(28, 28, 88);
+    cursor: pointer;
+}footer a:hover{
+    color: rgb(47, 47, 151);
+}
